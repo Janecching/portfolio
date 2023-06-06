@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+  background-image: linear-gradient(#b8cfec, #f8e8ed);
+}
+
+/* .gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 80px;
+} */
+
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col  mx-auto sm:px-16 px-6;
+}
+
+.black_btn {
+  @apply rounded-xl bg-black text-white text-sm py-2 px-2 text-center;
+  width: 100%;
+  height: 100%;
+}
+
+.tech_tag {
+  @apply rounded-md border border-gray-500 bg-transparent px-2 text-gray-500 text-center text-sm font-inter flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-12 m-5 text-5xl font-extrabold text-black sm:text-6xl;
+}
+
+.project_layout {
+  @apply sm:columns-2 sm:gap-6 xl:columns-3;
+}
+
+.feed {
+  @apply mt-2 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
+}
+
+.project_card {
+  @apply flex-1 break-inside-avoid rounded-lg mb-4 bg-white bg-clip-padding p-6 md:w-[360px] w-full h-fit;
+}
+
+.description_card {
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 mb-4 p-6 bg-white w-full h-fit;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
