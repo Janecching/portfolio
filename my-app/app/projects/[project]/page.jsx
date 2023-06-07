@@ -1,6 +1,7 @@
 "use client"
 import { usePathname } from 'next/navigation';
 import { FaGithub, FaLink } from 'react-icons/fa'
+import Image from 'next/image'
 import ProjectData from '../../../components/ProjectData';
 
 const ProjectPage = () => {
@@ -19,21 +20,35 @@ const ProjectPage = () => {
       <p className="mb-3 text-center">{content.tagline}</p>
       <div className="mb-10 flex items-start gap-2 justify-center">
         
-        <a href={content.github}><button className="black_btn">View Live</button></a>
-        <a href={content.website}><button className="black_btn">View Github</button></a>
+        <a href={content.website}><button className="black_btn">View Live</button></a>
+        <a href={content.github}><button className="black_btn">View Github</button></a>
         </div>
       
-      Why I built it
+      <div className="description_title">
+      Features
       <div className="description_card">
+      
       <p >{content.overview}</p>
       </div>
-      What it looks like
-      <div className="description_card">
-      <p >{content.features}</p>
       </div>
-      How I built it
+
+      <div className="description_title">
+      Screens
+      <div className="description_card">
+        <Image src={content.screens}
+          alt="user_image"
+          width={400}
+          height={400}
+          className="object-contain rounded-lg"
+          />
+      </div>
+      </div>
+
+      <div className="description_title">
+      Tech & Learnings
       <div className="description_card">
       <p >{content.tech}</p>
+      </div>
       </div>
         
     </div>

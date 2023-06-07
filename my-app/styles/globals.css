@@ -83,3 +83,14 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+.description_title {
+  width: 100%; /* Default width for mobile */
+}
+
+@media (min-width: 768px) {
+  .description_title {
+    width: 50%; /* Adjust the width for non-mobile screens */
+    margin: 0 auto;
+  }
+}

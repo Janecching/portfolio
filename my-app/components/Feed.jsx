@@ -15,7 +15,7 @@ const ProjectCardList = ({ data }) => {
 
 const Feed = () => {
   const [selectedSkill, setSelectedSkill] = useState('React');
-  const skills = ['React', 'Next', 'Tailwind', 'Python', 'Node.js', 'MongoDB', 'Flask', 'Django', 'AWS', 'MySQL', 'PostgresQL', 'FireBase', 'OpenAI', 'Nextjs'];
+  const skills = ['React', 'Node', 'Django', 'Flask', 'Python', 'JavaScript', 'AWS', 'GCP', 'Front-end', 'Back-end', 'Full-stack', 'AI/ML'];
   const [posts] = useState(Object.values(ProjectData));
   const filteredPosts = selectedSkill
     ? posts.filter((post) => post.skill.includes(selectedSkill))

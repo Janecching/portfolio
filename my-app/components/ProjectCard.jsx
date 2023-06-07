@@ -13,8 +13,8 @@ const ProjectCard = ({ post }) => {
       <Link href={`/projects/${post.slug}`}>
           <Image src={post.image}
           alt="user_image"
-          width={400}
           height={400}
+          width={400}
           className="object-contain rounded-lg"
           />
         </Link>
