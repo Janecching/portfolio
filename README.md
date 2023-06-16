@@ -20,7 +20,7 @@ Installation
 - Install the dependencies: npm install
 - Start the application: cd my-app; npm run server
 
-Contributions are welcome!
+Contributions are welcomed!
 - Fork the repository.
 - Create a new branch: git checkout -b feature/your-feature.
 - Make your changes and commit them: git commit -m 'Add some feature'.
