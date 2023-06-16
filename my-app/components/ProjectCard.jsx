@@ -19,17 +19,19 @@ const ProjectCard = ({ post }) => {
           />
         </Link>
       </div>
-      <div className="flex items-start gap-2 mt-2">
+      <div className="flex justify-between gap-2 mt-2">
         <h3 className="font-satoshi font-semibold text-gray-900">{post.title}</h3>
+        <div className="flex justify-between gap-2 mt-2">
         <a href={post.github}> <FaGithub/> </a>
         <a href={post.website}> <FaLink /> </a>
+        </div>
       </div>
-        <p className="text-sm text-gray-500 mb-1">{post.tagline}</p>
-        <div className="flex flex-wrap items-start gap-2">
+        <p className="text-sm text-gray-500 mb-3 mt-1">{post.tagline}</p>
+        {/* <div className="flex flex-wrap items-start gap-2">
         {post.skill.map((skill, index) => (
           <p key={index} className="tech_tag">{skill}</p>
         ))}
-        </div>
+        </div> */}
     </div>
     
   )

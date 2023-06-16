@@ -11,40 +11,46 @@ const ProjectData = {
       screens: '/assets/images/frenchteacher.jpg',
       tech:`Web development (React, Next, Node, Express, OpenAI), UI/UX design, API integration, prompt engineering, language learning principles`, 
     },
-    personalassistant: {
-      image: '/assets/images/personalassistant.jpg',
-      title: 'AI Personal Assistant',
-      tagline: 'Clear your mind and focus on what matters',
-      slug: 'personalassistant',
-      github: 'https://github.com/Janecching',
-      website: 'https://github.com/Janecching',
-      skill: ['JavaScript', 'Node', 'OpenAI', 'AI/ML', 'Full-stack'],
-      overview: "Productivity webapp that organizes and visualizes your chaotic mind into structured daily calendar ",
-      screens: '/assets/images/personalassistant.jpg',
+    gooddays: {
+      image: '/assets/images/gooddays.gif',
+      title: 'Good Days',
+      tagline: 'GPT powered journal that turns braindump into structured list, learn what makes your day a good day',
+      slug: 'gooddays',
+      github: 'https://github.com/Janecching/one-day',
+      website: 'https://one-hymvp2nzb-janecching.vercel.app/',
+      skill: ['React', 'JavaScript', 'Node', 'OpenAI', 'AI/ML', 'Full-stack'],
+      overview: `Existing features:
+      - Turns unstructured thoughts into a daily schedule using the OpenAI API.\n
+      - Allows users to easily drag and check off tasks on their daily schedule.\n
+      - Enables users to record journal entries, add pictures, and rate their day.\n
+      Upcoming features:\n
+      - Analyzes journal entries and day ratings to suggest activities that contribute to a "good day".\n
+      - Monthly calendar view that displays uploaded pictures, encouraging users to maintain streaks.\n`,
+      screens: '/assets/images/gooddays.gif',
       tech:`Web development (React, Next, Node.js, Express, OpenAI), UI/UX design, API integration, natural language processing`, 
     },
     discoveryqueue: {
-      image: '/assets/images/discoveryqueue.jpg',
+      image: '/assets/images/dq.gif',
       title: 'Discovery Queue',
-      tagline: 'Discover your new favourite song',
+      tagline: "Song recommender based on analyzing user's favourite songs",
       slug: 'discoveryqueue',
       github: 'https://discoverq-83c0b.web.app/',
       website: 'https://discoverq-83c0b.web.app/',
       skill: ['React', 'Node', 'AWS', 'Python', 'AI/ML', 'Full-stack'],
-      overview: "Find new songs based on your current favourite song, buzzfeed style quiz, and search songs based on music attributes",
-      screens: '/assets/images/discoveryqueue.jpg',
+      overview: "Search new songs via a buzzfeed style quiz, filtering for music attributes, and most similar song based on cosine similarity",
+      screens: '/assets/images/dq.gif',
       tech:`Databases`, 
     },
     virtualcampus: {
-      image: '/assets/images/virtualcampus.jpg',
+      image: '/assets/images/virtualcampus.gif',
       title: 'Virtual Campus',
-      tagline: 'Virtual campus for my masters community',
+      tagline: 'Real-time multiplayer game for my masters program and community board',
       slug: 'virtualcampus',
       github: 'https://devpost.com/software/virtual-campus-1ra9fq',
-      website: 'https://devpost.com/software/virtual-campus-1ra9fq',
+      website: 'https://school-18507.web.app/social.html',
       skill: ['React', 'JavaScript', 'GCP', 'Front-end'],
       overview: "This is a virtual campus made for my masters program community. It consists of a campus ground with live chat view and a focus room with pomodoro timer",
-      screens: '/assets/images/virtualcampus.jpg',
+      screens: '/assets/images/virtualcampus.gif',
       tech:`Javascript, real time multiplayer game`, 
     },
     greenfridge: {
@@ -60,7 +66,7 @@ const ProjectData = {
       tech:`Raspberry pi, twilio`, 
     },
     pattrn: {
-      image: '/assets/images/pattern.jpg',
+      image: '/assets/images/pattrns.gif',
       title: 'Pattrn',
       tagline: 'Turning wearables data into actionable insights',
       slug: 'pattrn',
@@ -68,7 +74,7 @@ const ProjectData = {
       website: 'https://devpost.com/software/health-report-card',
       skill: ['React', 'Flask', 'AI/ML', 'Front-end'],
       overview: "Digests activity monitor data and produces bullet point actionable summary on health status, comparison against goals, and personalized recommendations",
-      screens: '/assets/images/pattern.jpg',
+      screens: '/assets/images/pattrns.gif',
       tech:`React, responsive design`, 
     },
     quinahealth: {
