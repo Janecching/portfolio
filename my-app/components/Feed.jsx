@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectData from './ProjectData';
 
@@ -14,8 +14,8 @@ const ProjectCardList = ({ data }) => {
 };
 
 const Feed = () => {
-  const [selectedSkill, setSelectedSkill] = useState('React');
-  const skills = ['React', 'Node', 'Django', 'Flask', 'Python', 'JavaScript', 'AWS', 'GCP', 'Front-end', 'Back-end', 'Full-stack', 'AI/ML'];
+  const [selectedSkill, setSelectedSkill] = useState('Full-stack');
+  const skills = ['Full-stack', 'AI/LLM', 'Java', 'C', 'Python', 'JavaScript'];
   const [posts] = useState(Object.values(ProjectData));
   const filteredPosts = selectedSkill
     ? posts.filter((post) => post.skill.includes(selectedSkill))

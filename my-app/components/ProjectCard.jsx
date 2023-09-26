@@ -1,9 +1,7 @@
 "use client"
-import { useState } from "react"
+import '@styles/globals.css'
 import Image from 'next/image'
 import Link from "next/link"
-import { FaGithub, FaLink } from 'react-icons/fa'
-import '@styles/globals.css'
 
 const ProjectCard = ({ post }) => {
   return (
@@ -22,8 +20,8 @@ const ProjectCard = ({ post }) => {
       <div className="flex justify-between gap-2 mt-2">
         <h3 className="font-satoshi font-semibold text-gray-900">{post.title}</h3>
         <div className="flex justify-between gap-2 mt-2">
-        <a href={post.github}> <FaGithub/> </a>
-        <a href={post.website}> <FaLink /> </a>
+        {/* <a href={post.github}> <FaGithub/> </a>
+        <a href={post.website}> <FaLink /> </a> */}
         </div>
       </div>
         <p className="text-sm text-gray-500 mb-3 mt-1">{post.tagline}</p>
