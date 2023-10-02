@@ -1,4 +1,16 @@
 const ProjectData = {
+  mckinsey: {
+    image: '/assets/images/mckinsey.png',
+    title: 'Fellow Recruiting Platform for EDF',
+    tagline: 'Selected as best project by EDF in McKinsey Hackathon',
+    slug: 'mckinsey',
+    github: 'https://github.com/Janecching/',
+    website: 'https://github.com/Janecching/',
+    skill: ['All','JavaScript', 'Full-stack', 'AI/LLM'],
+    overview: "Built frontend of web app using JavaScript, HTML, CSS and proposed pipeline redesign for potential efficiency improvement of 89%",
+    screens: '/assets/images/mckinsey.png',
+    tech:`JavaScript, HTML, CSS, Node, Python, SQL, LLM (OpenAI)`, 
+  },
   talenthunt: {
     image: '/assets/images/talenthunt.gif',
     title: 'AI Video Interview Platform',
@@ -9,7 +21,7 @@ const ProjectData = {
     skill: ['All', 'Full-stack', 'AI/LLM', 'JavaScript'],
     overview: "Automated candidate screening tool that uses LLM to generate personalized interview questions and evaluate candidate responses.",
     screens: '/assets/images/talenthunt.gif',
-    tech:`React, Flask, Celery, (Speach to Text) Azure, LLM(OpenAI, LangChain, MindsDB), ML(Hume)`, 
+    tech:`React, Flask, Celery, (Speech to Text) Azure, LLM(OpenAI, LangChain, MindsDB), ML(Hume)`, 
   },
     frenchtutor: {
       image: '/assets/images/frenchtutor.gif',
@@ -155,6 +167,7 @@ const ProjectData = {
       screens: '/assets/images/server.jpg',
       tech:`C`, 
     },
+    
     
   };
 
